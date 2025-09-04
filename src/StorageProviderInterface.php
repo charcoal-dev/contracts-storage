@@ -8,6 +8,8 @@ declare(strict_types=1);
 
 namespace Charcoal\Contracts\Storage;
 
+use Charcoal\Contracts\Storage\Enums\StorageType;
+
 /**
  * Represents a contract that defines the required methods for storage providers.
  * Implementations of this interface describe the specific type of storage
@@ -15,7 +17,7 @@ namespace Charcoal\Contracts\Storage;
  */
 interface StorageProviderInterface
 {
-    public function storageType(): StorageTypeEnumInterface;
+    public function storageType(): StorageType;
 
     public function storageProviderId(): string;
 }
