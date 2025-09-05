@@ -35,5 +35,5 @@ interface CacheClientInterface extends StorageProviderInterface
 
     public function delete(string $key): bool;
 
-    public function truncate(string $key): bool;
+    public function truncate(): bool;
 }
